@@ -1,0 +1,32 @@
+.card{
+    width: 18rem;
+}
+@media (max-width:1000px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* align-items: center; */
+        width: 100%;
+    }
+    .card{
+        width: 100%;
+    }
+}
+
+.card{
+    transition: transform .3s;
+}
+.card:hover{
+    opacity: 0.89;
+    box-shadow: 5px 8px 12px #a2a1a1;
+    -ms-transform: scale(1.5); /*IE 9*/
+    -webkit-transform: scale(0.2); /*Safari 3-8*/
+    transform: scale(1.05);
+}
+
+
+
+.nav-link:hover{
+    border-bottom: 3px solid white;
+}
