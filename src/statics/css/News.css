@@ -18,11 +18,11 @@
     transition: transform .3s;
 }
 .card:hover{
-    opacity: 0.89;
+    opacity: 0.97;
     box-shadow: 5px 8px 12px #a2a1a1;
     -ms-transform: scale(1.5); /*IE 9*/
     -webkit-transform: scale(0.2); /*Safari 3-8*/
-    transform: scale(1.05);
+    transform: scale(1.02);
 }
 
 

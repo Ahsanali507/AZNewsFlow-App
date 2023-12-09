@@ -20,7 +20,7 @@ const Navbar=()=>{
   //   else{
   //     this.setState({mode:"Dark",btnText:"Enable Light Mode"});
   //   }
-  // }
+  // }https://github.com/Ahsanali507/AZNewsFlow-App
 
     return (
       <div>
@@ -44,7 +44,7 @@ const Navbar=()=>{
               id="navbarSupportedContent">
               <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                 <li className="nav-item">
-                  <Link className="nav-link" aria-current="page" to="/">
+                  <Link className="nav-link" aria-current="page" blanke to="/">
                     Home
                   </Link>
                 </li>

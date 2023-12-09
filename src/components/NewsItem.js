@@ -13,7 +13,7 @@ const NewsItem=({title, desciption,imgUrl,url,author,date,source})=>{
                   {desciption}
                 </p>
                 <p className="card-text"><small className="text-muted">By {!author?"Unknown":author} on {new Date(date).toTimeString()}</small></p>
-                <a href={url} className="btn btn-dark btn-sm">
+                <a href={url} target="_blank" rel="noopener noreferrer" className="btn btn-dark btn-sm">
                   Read More
                 </a>
               </div>
