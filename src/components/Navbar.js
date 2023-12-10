@@ -16,7 +16,7 @@ const [mode, setmode] = useState("dark")
 const [btnText, setbtnText] = useState("Enable Light Mode")
 const [textColor, settextColor] = useState("dark")
 const handleMode=async (e)=>{
-  e.preventDefault()
+  e.preventDefault();// event.preventDefault to prevent the browser from default behaviour
   if(mode==='dark'){
     setmode("light");
     setbtnText("Enable Dark Mode")
