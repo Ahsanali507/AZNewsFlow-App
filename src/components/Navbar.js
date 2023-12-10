@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {Link} from 'react-router-dom';
 import '../statics/css/News.css';
 
@@ -12,6 +12,22 @@ const Navbar=()=>{
   //   }
   // }
 
+const [mode, setmode] = useState("dark")
+const [btnText, setbtnText] = useState("Enable Light Mode")
+const [textColor, settextColor] = useState("dark")
+const handleMode=async (e)=>{
+  e.preventDefault()
+  if(mode==='dark'){
+    setmode("light");
+    setbtnText("Enable Dark Mode")
+    settextColor("light")
+  }
+  else{
+    setmode("dark");
+    setbtnText("Enable Light Mode")
+    settextColor("dark")
+  }
+}
 
   // handleMode=async ()=>{
   //   if(this.state.mode==='dark'){
@@ -20,11 +36,11 @@ const Navbar=()=>{
   //   else{
   //     this.setState({mode:"Dark",btnText:"Enable Light Mode"});
   //   }
-  // }https://github.com/Ahsanali507/AZNewsFlow-App
+  // }
 
     return (
       <div>
-        <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav className={`navbar navbar-expand-lg navbar-${textColor} bg-${mode} fixed-top`}>
           <div className="container-fluid">
             <Link className="navbar-brand" to="/">
               AZ News
@@ -44,7 +60,7 @@ const Navbar=()=>{
               id="navbarSupportedContent">
               <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                 <li className="nav-item">
-                  <Link className="nav-link" aria-current="page" blanke to="/">
+                  <Link className="nav-link" aria-current="page" to="/">
                     Home
                   </Link>
                 </li>
@@ -83,6 +99,11 @@ const Navbar=()=>{
                     {this.state.btnText}
                   </a>
                 </li> */}
+                <li className="nav-item">
+                  <a onClick={handleMode} className="nav-link" aria-current="page" href="/">
+                    {btnText}
+                  </a>
+                </li>
               </ul>
               <form className="d-flex" role="search">
                 <input
