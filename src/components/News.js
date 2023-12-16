@@ -30,6 +30,7 @@ const [totalResults, settotalResults] = useState(0);
   }
 
 
+// useeffect for everytime updations when click on buttons
 useEffect((e) => {
     updateNews();
     // eslint-disable-next-line
@@ -52,8 +53,6 @@ useEffect((e) => {
     }
   
   }
-
-
 
 
     return (
