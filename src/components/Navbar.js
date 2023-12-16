@@ -29,6 +29,7 @@ const handleMode=async (e)=>{
   }
 }
 
+  // this is for using class component
   // handleMode=async ()=>{
   //   if(this.state.mode==='dark'){
   //     this.setState({mode:"light",btnText:"Enable Dark Mode"});
